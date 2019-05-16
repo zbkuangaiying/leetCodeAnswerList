@@ -15,6 +15,7 @@ public class ExcelSheetColumnTitle extends LeetcodeEasyLevel {
 	public static void main(String[] args) {
 		int currInt = 24568;
 		System.out.println(convertToTitle(currInt));
+		
 	}
 	
     public static String convertToTitle(int n) {
