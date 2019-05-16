@@ -13,7 +13,8 @@ public class ExcelSheetColumnTitle extends LeetcodeEasyLevel {
 	static char[]  chars  = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
 
 	public static void main(String[] args) {
-		int currInt = 24568;
+		int currInt = 0;
+		currInt = 24468;
 		System.out.println(convertToTitle(currInt));
 		
 	}
