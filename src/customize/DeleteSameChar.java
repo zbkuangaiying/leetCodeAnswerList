@@ -1,0 +1,57 @@
+package customize;
+
+import easy.LeetcodeEasyLevel;
+
+/**
+ * @author GK
+ * @version 创建时间：2019-5-7 下午1:51:59
+ * @ClassName 类名称
+ * @Description 类描述
+ */
+public class DeleteSameChar extends LeetcodeEasyLevel{
+	
+	public static void main(String[] args) {
+		String str = "abcdeeeeeeffacss";
+		System.out.println(deleteSamechar(str));
+		System.out.println(deleteSameCharLeftOne(str));
+	}
+
+	private static String deleteSameCharLeftOne(String str) {
+		// TODO Auto-generated method stub
+		char[] chars = str.toCharArray();
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < chars.length-1; i++) {
+			if(chars[i] != chars[i+1]){
+				sb.append(chars[i]);
+			}
+		}
+			sb.append(chars[chars.length - 1]);
+		
+		return sb.toString();
+	}
+
+	private static String deleteSamechar(String str) {
+		char[] chars = str.toCharArray();
+		StringBuilder sb = new StringBuilder();
+		char c = 0 ;
+		for (int i = 0; i < chars.length-1; i++) {
+			if(chars[i] == chars[i+1]){
+				c = chars[i];
+				sb.append(" ");
+			}else{
+				 if(c != 0 && chars[i] == c){
+					 sb.append(" ");
+				 }else{
+					 sb.append(chars[i]);
+				 }
+			}
+		}
+		if(chars[chars.length-1] == chars[chars.length-2]){
+			return sb.toString().replace(" ", "");
+		}else{
+			sb.append(chars[chars.length-1]);
+			return sb.toString().replace(" ", "");
+		}	
+	}
+
+}
