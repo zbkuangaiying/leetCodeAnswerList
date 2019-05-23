@@ -1,4 +1,4 @@
-package easy;
+﻿package easy;
 /**
  * @author GK
  * @version 创建时间：2019-5-23 上午9:20:20
@@ -17,12 +17,17 @@ public class ReverseBits extends LeetcodeEasyLevel {
 
 
 	static int n = 43261596;
+
 	public static void main(String[] args) {
+
 		System.out.println(reverseBits(n));
 	}
+
     // you need treat n as an unsigned value
     public static int reverseBits(int n) {
+
         int result = 0;
+
         for (int i = 0; i <= 32; i++) {
         	//原数字右移i位
 			int temp = n >> i;
