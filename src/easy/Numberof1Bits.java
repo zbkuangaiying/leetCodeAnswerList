@@ -13,7 +13,7 @@ package easy;
 public class Numberof1Bits extends LeetcodeEasyLevel {
 	
 	public static void main(String[] args) {
-		int i = 00000000000000000000000000001011;
+		int i = -3;
 		System.out.println(hammingWeight(i));
 	}
 	
@@ -21,13 +21,13 @@ public class Numberof1Bits extends LeetcodeEasyLevel {
     // you need to treat n as an unsigned value
     public static int hammingWeight(int n) {
     	int result = 0;
-    	while (n > 0) {
-		
-			result += n &  1;
-			n =n >> 1 ;
+    	
+    	while (n != 0) {
+    		result++;
+    		int temp = n - 1;
+    		n = n & temp;
 		}
 		return result;
-        
-    }
+    	}
 
 }
