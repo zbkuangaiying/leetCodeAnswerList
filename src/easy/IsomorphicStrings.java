@@ -46,7 +46,7 @@ import java.util.Map;
  * return false
  * 
  * 
- * the first tume i saw this mind   i could't understand it
+ * the first time i saw this mind   i could't understand it
  * after trying some other ways, i started to understand this mind
  * i'am stupid so much
  * i think my IQ is even not better than an orangutan
