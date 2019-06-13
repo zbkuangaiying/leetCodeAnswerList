@@ -9,6 +9,11 @@ package easy;
 public class PalindromeNode extends LeetcodeEasyLevel{
 
 	public static void main(String[] args) {
+		ListNode p = new ListNode(1);
+		p.addNode(2);
+		p.addNode(2);
+		p.addNode(1);
+		System.out.println(isPalindrome(p));
 	}
 	
 	
