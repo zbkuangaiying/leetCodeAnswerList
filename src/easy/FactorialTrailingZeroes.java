@@ -24,6 +24,22 @@ public class FactorialTrailingZeroes extends LeetcodeEasyLevel {
 	public static void main(String[] args) {
 		long l = trailingZeroes(6);
 		System.out.println(l);
+		
+		double d = 0;
+//		d = (1-0.52);
+//		System.out.println(d);
+//		d = d*(1-0.50);
+//		System.out.println(d);
+//		d = d*(1-0.50);
+//		System.out.println(d);
+//		d = d*(1-0.80);
+//		System.out.println(d);
+//		d = d*(1-0.25);
+//		System.out.println(d);
+//		d = d*(1-0.17);
+//		System.out.println(d);
+		d = (1- 0.52)*(1-0.50)*(1-0.50)*(1-0.80)*(1-0.25)*(1-0.17);
+		System.out.println(d);
 	}
 
 	 public static  int trailingZeroes(int n) {

@@ -46,7 +46,6 @@ public class LeetcodeEasyLevel {
 		
 		public void deleteNode(int i) {
 			ListNode temp = this;
-			ListNode slow = this;
 			int n = 0;
 			if (temp.val == i && temp.next != null) {
 				temp.val = temp.next.val;

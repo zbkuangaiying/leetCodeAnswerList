@@ -1,5 +1,7 @@
 package customize;
 
+import java.util.Arrays;
+
 import easy.LeetcodeEasyLevel;
 
 /**
@@ -11,9 +13,39 @@ import easy.LeetcodeEasyLevel;
 public class DeleteSameChar extends LeetcodeEasyLevel{
 	
 	public static void main(String[] args) {
-		String str = "abcdeeeeeeffacss";
-		System.out.println(deleteSamechar(str));
-		System.out.println(deleteSameCharLeftOne(str));
+//		String str = "abcdeeeeeeffacss";
+//		System.out.println(deleteSamechar(str));
+//		System.out.println(deleteSameCharLeftOne(str));
+		Primes(30);
+	}
+
+	private static void Primes(int max) {
+		int[] nums = new int[max];
+		int count = 2;
+		for (int i = 2; i < max; i++) {
+			nums[i] =i;
+		}
+		
+		for (int i = 2; i *i < max; i++) {
+				for (int j = i*i; j < max; j+=i) {
+					if(nums[j] != 0){
+						nums[j] = 0;
+						count ++;
+					}
+				}
+			}
+			
+		System.out.println(Arrays.toString(nums));
+		
+
+		System.out.println(max-count);
+		count = 0;
+		for (int i = 0; i < nums.length; i++) {
+			if(nums[i] != 0){
+				count ++;
+			}
+		}
+		System.out.println(count);
 	}
 
 	private static String deleteSameCharLeftOne(String str) {

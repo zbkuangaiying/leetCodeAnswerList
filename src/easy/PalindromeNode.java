@@ -1,9 +1,5 @@
 package easy;
 
-import java.util.Stack;
-
-import easy.LeetcodeEasyLevel.ListNode;
-
 /**
  * @author GK
  * @version 创建时间：2019-6-13 下午2:38:02
@@ -13,14 +9,6 @@ import easy.LeetcodeEasyLevel.ListNode;
 public class PalindromeNode extends LeetcodeEasyLevel{
 
 	public static void main(String[] args) {
-		
-		ListNode p = new ListNode(1);
-		p.addNode(2);
-		p.addNode(2);
-		p.addNode(1);
-		System.out.println(isPalindrome(p));
-		
-		
 	}
 	
 	
