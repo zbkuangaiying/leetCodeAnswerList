@@ -5,6 +5,26 @@ package easy;
  * @version 创建时间：2019-6-13 下午2:38:02
  * @ClassName 类名称
  * @Description 类描述
+ * 
+ *  No.234 solved
+
+    when i met the question , i  was realized quickly that i can use fast point and slow point to find the middle node,
+    and then reverse the slow node, get a new node ;
+    then loop the slow half node to get value and compare to this new node's value to get result.
+
+    and i also tryed another method.
+    the stupid but easy to understand method.
+
+    first i put all node's value push into a stack and count the node's length.
+    then  i  loop the originl node to get the value and compare to the stack's top,
+    if they are same, get the next node and stack pop the last one;
+    then do compare again until we get result
+    and we just need looped  that  half of  node's length
+
+    STACK!
+    what a sucks!
+    i really like the first way. hard  to spell, easy to  run!
+
  */
 public class PalindromeNode extends LeetcodeEasyLevel{
 
