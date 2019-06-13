@@ -19,6 +19,8 @@ public class PalindromeNode extends LeetcodeEasyLevel{
 		p.addNode(2);
 		p.addNode(1);
 		System.out.println(isPalindrome(p));
+		
+		
 	}
 	
 	
